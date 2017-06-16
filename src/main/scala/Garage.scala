@@ -1,19 +1,21 @@
 /**
   * Created by Administrator on 12/06/2017.
   */
+//Garage class contains two arrays one for the vehicles and the other for employees
 class Garage {
   val VehicleArrayBuffer = scala.collection.mutable.ArrayBuffer.empty[Vehicle]
   val EmployeeArrayBuffer = scala.collection.mutable.ArrayBuffer.empty[Employee]
 
-
+//Adds a vehicle in to the array.
   def addV(inV: Vehicle) = {
     VehicleArrayBuffer += inV
   }
+  //Adds employee to the array.
 def addE(addE: Employee) ={
   EmployeeArrayBuffer += addE
 
 }
-
+//case mkatches to see if the vehicle needs fixing or not based on true or false.
   def checkFix() ={
 
     for(x <- 0 to VehicleArrayBuffer.size - 1)

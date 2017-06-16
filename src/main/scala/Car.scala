@@ -1,3 +1,4 @@
+//Generates class for vehicle type Car, assign's ID colour, model, how many tyres it has and wether or not it needs fixing with a boolean.
 class Car(var ID:Int, var col: String, var mod: String, var tyr: Int, var fix:Boolean) extends Vehicle{
   var f: Boolean = fix
   var iD:Int = ID
@@ -6,6 +7,7 @@ class Car(var ID:Int, var col: String, var mod: String, var tyr: Int, var fix:Bo
   var tyres: Int = tyr
   var inFix: Boolean = fix
 
+  //helps assign parts to the broken vehicles and calculates the cost for the parts.
   if(!fix) {
     addPart(p1)
     addPart(p2)
